@@ -8,6 +8,11 @@
 
 Práctica/Taller: Añadir Template Haml a Rock, Paper, ScissorsAyuda con Planificador de taller
 
+
+####Objetivo de la práctica
+
+Implementación a través de haml de las partes de código HTML usadas en la aplicación sobre el juego Piedra-Papel-Tijera.
+
 #### Glosario de archivos
 
 <ul>
