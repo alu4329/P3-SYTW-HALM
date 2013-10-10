@@ -1,11 +1,12 @@
 # Práctica 3 - SYTW
 
-## alu4329 - Víctor Plaza Martín 
+## Víctor Plaza Martín
 
 
 ### Descripción de la Práctica
 
 
+Práctica/Taller: Añadir Template Haml a Rock, Paper, ScissorsAyuda con Planificador de taller
 
 #### Glosario de archivos
 
@@ -17,3 +18,5 @@
 </ul>
 
 #### Instrucciones de la práctica
+
+Al contar con un archivo Rakefile, la ejecución de la práctica se realiza de manera sencilla a través del comando "Rake" ya que el método esta declarado para default. 
