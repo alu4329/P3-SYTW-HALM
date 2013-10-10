@@ -1,0 +1,14 @@
+%html
+  %head
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html', :charset => 'utf-8'}
+    %title Practica 3 - SYTW
+
+  %body{:style => "background-image: url('http://www.hdwallpapersinn.com/wp-content/uploads/2012/09/soft-skin.jpg')"}
+  %center 
+    %h1 Práctica 3 - SYTW - USO DE HAML
+    %h3 Elija una de las siguientes opciones:
+    %a{:href => '?choice=piedra'} Piedra
+    %a{:href => '?choice=papel'} Papel
+    %a{:href => '?choice=tijera'} Tijera
+    %h2  Resultado:
+    %h3= answer

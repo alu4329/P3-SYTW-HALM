@@ -1,6 +1,6 @@
 require 'rack'
 require 'thin'
-require 'halm'
+require 'haml'
   
   module PiedraPapelTijera
     class App 
@@ -32,21 +32,15 @@ require 'halm'
           else
             "Lástima; #{computer_throw} gana #{player_throw}. Suerte la próxima vez"
           end
-  
+
+        engine = Haml::Engine.new File.open("views/ejecutable.haml").read
+      
         res = Rack::Response.new
-        res.write <<-"EOS"
-        <html>
-          <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-          <title>PiedraPapelTijera</title>
-          <body>
-            <h1>
-               #{answer}
-               #{@choose}
-            </h1>
-          </body>
-        </html>
-        EOS
-        res.finish
+      
+        res.write engine.render(
+          {},
+          :answer => answer)
+      res.finish
       end # call
     end   # App
   end     # PiedraPapelTijera
