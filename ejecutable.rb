@@ -1,5 +1,6 @@
-require 'rack/request'
-require 'rack/response'
+require 'rack'
+require 'thin'
+require 'halm'
   
   module PiedraPapelTijera
     class App 
@@ -35,6 +36,7 @@ require 'rack/response'
         res = Rack::Response.new
         res.write <<-"EOS"
         <html>
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
           <title>PiedraPapelTijera</title>
           <body>
             <h1>
@@ -50,13 +52,11 @@ require 'rack/response'
   end     # PiedraPapelTijera
   
   if $0 == __FILE__
-    require 'rack'
-    require 'rack/showexceptions'
     Rack::Server.start(
       :app => Rack::ShowExceptions.new(
                 Rack::Lint.new(
                   PiedraPapelTijera::App.new)), 
-      :Port => 9292,
+      :Port => 8080,
       :server => 'thin'
     )
   end
