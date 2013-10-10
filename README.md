@@ -17,6 +17,7 @@ Práctica/Taller: Añadir Template Haml a Rock, Paper, ScissorsAyuda con Planifi
   <li>Gemfile - Archivo donde se encuentran las gemas usadas y sus versiones</li>
   <li>.gitignore - Archivo donde se especifican los archivos que no deseamos añadir al control de versiones</li>
   <li>.ruby-version - Archivo que contiene la versión de ruby sobre la que trabajamos</li>
+  <li>.ruby-gemset - Archivo donde tenemos configurada la gemset a utilizar</li>
 </ul>
 
 #### Instrucciones de la práctica
