@@ -11,6 +11,7 @@ Práctica/Taller: Añadir Template Haml a Rock, Paper, ScissorsAyuda con Planifi
 #### Glosario de archivos
 
 <ul>
+  <li>ejecutable.rb - Archivo ejecutable con el cuerpo del proceso</li>
   <li>Rakefile - Archivo de ejecución de Ruby </li>
   <li>Gemfile - Archivo donde se encuentran las gemas usadas y sus versiones</li>
   <li>.gitignore - Archivo donde se especifican los archivos que no deseamos añadir al control de versiones</li>
