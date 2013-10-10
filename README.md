@@ -21,4 +21,10 @@ Práctica/Taller: Añadir Template Haml a Rock, Paper, ScissorsAyuda con Planifi
 
 #### Instrucciones de la práctica
 
-Al contar con un archivo Rakefile, la ejecución de la práctica se realiza de manera sencilla a través del comando "Rake" ya que el método esta declarado para default. 
+  Instrucciones  a ejecutar:
+
+    $ rake
+
+  URL de visualización:
+
+    $ http://localhost:8080/
